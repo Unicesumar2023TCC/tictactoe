@@ -19,6 +19,6 @@ module.exports = class Users {
     }
     //delete user
     static deleteUser(id, callback){
-        return db.query('DELETE from users where id = ?', [id], callback);
+        return db.query('UPDATE user SET stats = 'DISABLED' where id = ?', [id], callback);
     }
 }
