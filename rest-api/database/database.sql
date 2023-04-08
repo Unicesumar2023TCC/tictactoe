@@ -6,6 +6,6 @@ create table users (
     	name varchar(50) not null,
     	email varchar(150),
     	nickname varchar(50) not null unique,
-    	password varchar(50) not null,
+    	password varchar(150) not null,
 	stats ENUM('ACTIVE', 'DISABLE', 'BLOCK') DEFAULT 'ACTIVE'
 );
